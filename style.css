@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    background-color: rgba(9, 9, 9, 0.553);
+    height: 210px;
+
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    /* logo na esquerda e nav na direita */
+    justify-content: space-between;
+}
+
+header #logo {
+    /* background-color: white; */
+    height: 70px;
+    width: 65px;
+}
+
+header #logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    object-fit: cover;
+}
+
+/* NAV */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* LINKS */
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* header ul li {
+    font-size: 30px;
+} */
+
+header ul li a {
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: rgb(116, 36, 36);
+}
+
+
+/* BOTÃO */
+header button {
+    background-color: rgb(98, 19, 19);
+    width: 150px;
+    height: 40px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: none;
+
+
+    font-size: 15px;
+    margin: 0;
+    color: white;
+    gap: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: rgb(205, 57, 57);
+}
+
+header button img {
+    height: 18px;
+    width: 20px;
+    object-fit: cover;
+}
+
+main {
+    /* background-color: peru; */
+    width: 80%;
+    margin: 30px auto 0;
+    flex: 1;
+}
+
+/* INTRODUÇÃO */
+#introducao {
+    /* background-color: white; */
+    color: white;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    gap: 50px;
+
+    display: flex;
+}
+
+#introducao #pizaria img {
+    /* background-color: red; */
+    width: 670px;
+    object-fit: cover;
+}
+
+#introducao #descricao {
+    /* background-color: blue; */
+    width: 80%;
+    margin: auto;
+}
+
+#texto_Principal h1 {
+    /* background-color: pink; */
+    width: 100%;
+    font-size: 70px;
+}
+
+#texto_Principal h1 span {
+    color: brown;
+}
+
+#texto_entregas h2 {
+    /* background-color: aquamarine; */
+    width: 70%;
+    font-size: 40px;
+}
+
+#texto_entregas h2 span {
+    color: rgb(213, 213, 49);
+}
+
+/* MAIS PEDIDAS */
+#mais-pedidas {
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+
+#mais-pedidas .texto {
+    /* background-color: teal; */
+    width: 40%;
+}
+
+#mais-pedidas .texto h2 {
+    /* background-color: blue; */
+    width: 100%;
+    font-size: 55px;
+}
+
+#mais-pedidas .texto h2 span {
+    color: rgb(213, 213, 49);
+}
+
+#mais-pedidas .texto img {
+    width: 100%;
+    height: auto;
+}
+
+/* PIZZAS */
+.pizzas {
+    /* background-color: purple; */
+    width: 70%;
+    /* margin-top: 190px; */
+
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+}
+
+.pizza {
+     border: 2.5px solid red;
+
+    width: 40%;
+    padding: 25px;
+    height: 50%;
+
+
+    margin: auto;
+    border-radius: 60px;
+    transition: 0.3s;
+}
+
+.pizza:hover {
+   box-shadow: 0px 10px 10px 0px rgb(250, 20, 20);
+    transform: translateY(-8px);
+    /* width: 42%;
+    padding: 30px;
+    border-radius: 40px; */
+}
+
+.pizza img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.pizza p {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pizza button {
+    background-color: rgb(182, 33, 33);
+    width: 90%;
+    height: 50px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: none;
+
+
+    font-size: 15px;
+    margin: auto;
+    color: white;
+    gap: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pizza button:hover {
+    background-color: rgb(205, 57, 57);
+}
+
+.pizza button img {
+    height: 25px;
+    width: 35px;
+    margin-top: 5%;
+    object-fit: cover;
+}
+
+/* COMBOS */
+
+#NossosCombos {
+    background-color: rgb(182, 33, 33);
+    width: 100%;
+    margin-top: 35px;
+    padding: 80px 0;
+}
+
+
+/* TÍTULO */
+.texto_combos {
+    width: 90%;
+    margin: auto;
+}
+
+.texto_combos h2 {
+    font-size: 55px;
+    /* padding: 5px; */
+}
+
+.texto_combos h2 span {
+    color: rgb(213, 213, 49);
+}
+
+
+/* CARDS COMBOS */
+.combos_opcoes {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* CARD INDIVIDUAL */
+.combos {
+    width: 30%;
+    padding: 30px;
+    /* background-color: gray; */
+
+    border-radius: 40px;
+
+    transition: 0.3s;
+}
+
+.combos:hover {
+    transform: translateY(-10px);
+}
+
+
+/* IMAGEM DO COMBO */
+.combos>img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    border-radius: 10px;
+
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+/* BOTÃO */
+.combos button {
+    background-color: rgb(123, 25, 25);
+
+    width: 90%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    margin: auto;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: 15px;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* ÍCONE DO WHATSAPP */
+.combos button img {
+    width: 25px;
+    height: 35px;
+
+    object-fit: contain;
+
+    margin: 0;
+    border-radius: 0;
+}
+
+/* HOVER DO BOTÃO */
+.combos button:hover {
+    background-color: rgb(205, 57, 57);
+}
+
+/* MISSÃO */
+#nossa_missao {
+    /* background-color: chocolate; */
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    /* justify-content: space-between; */
+}
+
+.txt_missao {
+    /* background-color: red; */
+    width: 60%;
+    /* padding: 50px; */
+}
+
+.txt_missao h2 {
+    /* background-color: black; */
+    width: 15%;
+    font-size: 55px;
+    /* padding: 30px; */
+}
+
+.txt_missao h2 span {
+    color: rgb(213, 213, 49);
+}
+
+.txt_missao p {
+    /* background-color: black; */
+    width: 90%;
+    font-size: 35px;
+    padding: 30px;
+}
+
+.logo {
+    /* background-color: blue; */
+    width: 30%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+    /* min-height: 300px; */
+
+    background-color: rgb(9, 9, 9);
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10%;
+
+    /* padding: 60px 8%; */
+    margin-top: 15px;
+}
+
+
+/* LOGO */
+.logo_footer {
+    width: 90px;
+    padding: 20px;
+    /* background-color: red; */
+}
+
+.logo_footer img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/* LOCALIZAÇÃO */
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2px; */
+}
+
+.localizacao p {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.localizacao ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+
+.localizacao li {
+    font-size: 15px;
+}
+
+
+/* CONTATOS */
+.contatos ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+
+.contatos li {
+    font-size: 15px;
+}
+
+.contatos a {
+    color: white;
+    text-decoration: underline;
+
+    display: flex;
+    align-items: center;
+    /* gap: 1px; */
+
+    transition: 0.3s;
+}
+
+.contatos a:hover {
+    color: rgb(213, 213, 49);
+}
+
+
+/* ÍCONES DO FOOTER */
+.contatos img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+@media(min-width:993px) and (max-width:1117px){
+    /* body{
+        background-color: pink;
+    } */
+    main{
+        /* background-color: green; */
+        width: 90%;
+    }
+
+    #introducao{
+        width: 100%;
+        gap: 5px;
+    }
+    #texto_Principal h1 {
+        width: 100%;
+        font-size: 55px;
+        padding: 20px;
+        /* background-color: red; */
+    }
+
+    #texto_entregas h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media(min-width:769px) and (max-width:992px) {
+    header {
+        padding: 0px 0px;
+    }
+
+    #introducao {
+        display: flex;
+        width: 100%;
+    }
+
+    #introducao #pizaria img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #texto_Principal h1 {
+        font-size: 55px;
+    }
+
+    #texto_entregas h2 {
+        font-size: 30px;
+    }
+
+    #mais-pedidas {
+        width: 100%;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto{
+        display: flex;
+    }
+
+    .pizzas {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: red; */
+        margin-top:15px;
+    }
+
+    .pizza {
+        width: 40%;
+        height: 5%;
+    } 
+
+    /* CARDS COMBOS */
+
+    .texto_combos h2 {
+        font-size: 45px;
+    }
+
+
+    /* CARD INDIVIDUAL */
+    .combos {
+        width: 40%;
+    }
+
+
+    /* MISSÃO */
+
+    .txt_missao h2 {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .txt_missao p {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .logo{
+        background-color: yellow;
+        width: 20%;
+        height: 80px;
+    }
+    .logo img{
+        width: 100%;
+    }
+}
+
+@media(min-width:481px) and (max-width: 768px) {
+    header #logo {
+        /* background-color: white; */
+        height: 60px;
+        width: 55px;
+    }
+
+    header #logo img {
+        width: 90%;
+        height: 90%;
+        border-radius: 300px;
+        object-fit: cover;
+    }
+
+    header {
+        padding: 0px 0px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    header button {
+        width: 110px;
+        gap: 0px;
+        font-size: 9px;
+    }
+
+    #introducao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #introducao #pizaria img {
+        width: 100%;
+    }
+
+    #texto_Principal h1 {
+        font-size: 55px;
+    }
+
+    #texto_entregas h2 {
+        font-size: 30px;
+    }
+
+    #mais-pedidas {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #mais-pedidas .texto {
+        width: 100%;
+    }
+
+    .pizzas {
+        width: 100%;
+    }
+
+    .pizza {
+        width: 70%;
+        /* height: 50%; */
+    }
+
+    /* CARDS COMBOS */
+    .combos_opcoes {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .texto_combos h2 {
+        font-size: 35px;
+    }
+
+
+    /* CARD INDIVIDUAL */
+    .combos {
+        width: 60%;
+    }
+
+
+    /* MISSÃO */
+    #nossa_missao {
+        flex-direction: column;
+    }
+
+    .txt_missao h2 {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .txt_missao p {
+        width: 150%;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+}
+
+
+@media(max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #introducao {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #introducao #pizaria img {
+        width: 90%;
+    }
+
+    #texto_Principal h1 {
+        font-size: 40px;
+    }
+
+    #texto_entregas h2 {
+        font-size: 20px;
+    }
+
+    #mais-pedidas {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #mais-pedidas .texto {
+        width: 100%;
+    }
+
+    #mais-pedidas .texto h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .pizzas {
+        /* background-color: purple; */
+        width: 100%;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .pizza {
+        width: 90%;
+        height: 50%;
+    }
+
+    /* CARDS COMBOS */
+    .combos_opcoes {
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    .texto_combos h2 {
+        font-size: 35px;
+        /* padding: 5px; */
+    }
+
+
+    /* CARD INDIVIDUAL */
+    .combos {
+        width: 100%;
+    }
+
+
+    /* MISSÃO */
+    #nossa_missao {
+        flex-direction: column;
+    }
+
+    .txt_missao h2 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .txt_missao p {
+        width: 165%;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+}

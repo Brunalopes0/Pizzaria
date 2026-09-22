@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            width: 90%;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 5%;
+            /* background-color: pink; */
+        }
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav {
+            /* background-color: red; */
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: rgb(116, 36, 36);
+            ;
+        }
+
+        section {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: pink; */
+        }
+
+        section img {
+            width: 30%;
+        }
+
+        #cardapio {
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #cardapio h2 {
+            font-size: 45px;
+            text-decoration: underline;
+        }
+
+        #cardapio h2 span {
+            color: red;
+        }
+
+        .Todas_pizzas {
+            /* background-color: blue; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .sabores {
+            border: 1.2px solid red;
+            margin: auto;
+            cursor: pointer;
+            width: 30%;
+            padding: 10px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .sabores:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 10px 10px 0px rgb(250, 20, 20);
+        }
+
+        .sabores img {
+            width: 70%;
+            height: 180px;
+            padding: 10px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .sabores h3 {
+            font-size: 28px;
+        }
+
+        .sabores p {
+            font-size: 15px;
+        }
+
+        .sabores button {
+            background-color: rgb(98, 19, 19);
+            width: 150px;
+            height: 40px;
+
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            border: none;
+
+
+            font-size: 15px;
+            margin: 0;
+            color: white;
+            gap: 20px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .sabores button:hover {
+            background-color: rgb(205, 57, 57);
+        }
+
+        @media(min-width:400px) and (max-width: 813px) {
+            .sabores {
+                width: 40%;
+            }
+
+            .sabores h3 {
+                font-size: 28px;
+            }
+
+            .sabores p {
+                font-size: 13px;
+            }
+
+            .sabores button {
+                background-color: rgb(98, 19, 19);
+                width: 100px;
+                height: 30px;
+            }
+        }
+    </style>
+    <title>Pizza Planet</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cardapio completo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+    <main>
+
+        <section id="cardapio">
+            <h2>PIZZAS <span>CLÁSSICAS</span></h2>
+            <div class="Todas_pizzas">
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2OrGvyx6Vf2jPGrbWbHY_5hsz6SAqjivk1CKHe9T1YUr9I0XYsICJ1HE&s=10"
+                        alt="">
+                    <h3>Pizza planet</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$39,90</button>
+                </div>
+
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4DA3QfVdp9Ky4eUa3MDq7TBY9aoLICpB-kFGZD8hJY61Ul3SXsJdxQc&s=10"
+                        alt="">
+                    <h3>Via Láctea</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$42,90</button>
+                </div>
+
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHxvyfU0RmRBoRyQdoGDUwjxJqimeHWkkwyZP54f1BNFuBm1hgh6KgSly&s=10"
+                        alt="">
+                    <h3>Marte Picante</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$44,90</button>
+                </div>
+
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tev-HWPKrhCaK5KCEzm7Gr6bIWUXEIGIfU4TQZOcDNZJQdhmLmFPRiS-&s=10"
+                        alt="">
+                    <h3>Saturno</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$45,90</button>
+                </div>
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHxvyfU0RmRBoRyQdoGDUwjxJqimeHWkkwyZP54f1BNFuBm1hgh6KgSly&s=10"
+                        alt="">
+                    <h3>Marte Picante</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$44,90</button>
+                </div>
+                <div class="sabores">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo4DA3QfVdp9Ky4eUa3MDq7TBY9aoLICpB-kFGZD8hJY61Ul3SXsJdxQc&s=10"
+                        alt="">
+                    <h3>Via Láctea</h3>
+                    <p>Mussarela, calabresa,cebola e orégano</p>
+                    <button>R$42,90</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="imgs/cardapio-pizzaplaet.png" alt="">
+        </section>
+    </main>
+
+</body>
+
+</html>
