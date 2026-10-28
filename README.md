@@ -1,4 +1,4 @@
-# 🍕 Pizza Play
+# 🍕 Pizza Planet
 
 Landing page de uma pizzaria fictícia, desenvolvida para praticar e demonstrar conhecimentos em desenvolvimento web.
 
